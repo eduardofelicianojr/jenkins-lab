@@ -24,8 +24,8 @@ pipeline {
        stage('Deploy') {
            steps {
                sh '''
-                   docker compose down || true
-                   docker compose up -d
+                   docker compose -p pipeline-cadastro-lab-teste down --remove-orphans || true
+                   docker compose -p pipeline-cadastro-lab-teste up -d --build
                '''
            }
        }

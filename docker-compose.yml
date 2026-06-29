@@ -1,7 +1,6 @@
 services:
    app001:
       build: .
-      container_name: app001
       ports:
          - "80:80"
       volumes:
