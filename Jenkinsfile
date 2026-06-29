@@ -25,7 +25,6 @@ pipeline {
            steps {
                sh '''
                    docker compose -p pipeline-cadastro-lab-teste down --remove-orphans || true
-                   docker rm -f $(docker ps -q --filter "publish=8081") || true
                    docker compose -p pipeline-cadastro-lab-teste up -d --build
                '''
            }
