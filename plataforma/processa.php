@@ -1,6 +1,6 @@
 <?php
 
-$host = "db001";
+$host = "db001--";
 $user = "root";
 $password = "123456";
 $database = "cadastro";
