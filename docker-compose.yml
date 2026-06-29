@@ -2,7 +2,7 @@ services:
    app001:
       build: .
       ports:
-         - "8081:80"
+         - "8080:80"
       volumes:
          - ./plataforma:/var/www/html/plataforma
       networks:
